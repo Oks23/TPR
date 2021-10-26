@@ -103,7 +103,8 @@ class LinearModel:
         print(self.optimalValue)
         print("Знайдений вектор ймовірності для першого гравця можна записати у вигляді:\n P(0.125,0,0,0.875,0)")
         print("Знайдений вектор ймовірності для другого гравця можна записати у вигляді:\n Q(0,",self.x[0],",",0,",",0,",",self.x[1],")")
-
+        print("Ціна гри дорівнює:", 1/(self.optimalValue))
+        
     def printTableau(self, tableau):
         print("ind \t\t", end="")
         for j in range(0, len(c)):
